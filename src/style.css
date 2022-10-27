@@ -60,10 +60,41 @@ body {
   border: none;
   font-size: larger;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .equal-btn {
   flex-basis: 40%;
   color: #fff6f0;
   background-color: #ffc290 !important;
+}
+
+@media (max-width: 450px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    /* max-height: 200px; */
+    border-radius: 30px;
+    border: none;
+    box-shadow: none;
+  }
+  button {
+    box-shadow: 0 2px 3px grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: 0.2s ease;
+  }
+
+  button:active {
+    box-shadow: 0 1px 3px grey;
+    transform: translateY(1px);
+  }
+
+  .equal-btn {
+    border-radius: 0;
+  }
 }
